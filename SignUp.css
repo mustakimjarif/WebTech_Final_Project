@@ -1,0 +1,149 @@
+/* Basic Styling for the Body */
+body {
+  background: url('img_reg.jpg') no-repeat center center fixed;
+  background-size: cover; /* Cover to ensure the image fills the screen */
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container for Centering the Form with Glass Effect */
+.container {
+  background: rgba(255, 255, 255, 0.5); /* Adjusted for better visibility */
+  backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
+  padding: 30px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  width: 90%; /* Responsive width */
+  max-width: 400px; /* Maximum width to maintain design */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border for glass effect */
+  transition: backdrop-filter 0.3s ease;
+}
+
+/* Form Title */
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Styling the Form Labels */
+label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 5px;
+  display: flex;
+}
+
+/* Input Field Styles */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.6); /* Increased opacity for better visibility */
+  backdrop-filter: blur(5px); /* Blur behind inputs */
+  transition: border-color 0.3s ease;
+}
+
+/* Focused Input Field */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff;
+}
+
+/* Gender Selection Styling */
+.gender-selection {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.gender-selection label {
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+/* Styling radio buttons side by side */
+.gender-selection input[type="radio"] {
+  margin-right: 5px;
+  margin-left: 10px;
+}
+
+.gender-option {
+  margin-right: 20px;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Error Message Styling */
+span {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 7px;
+  display: block;
+}
+
+/* Submit Button Styling */
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #a913ae;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #591164;
+}
+
+/* Error Message Styling */
+.error-message {
+  color: red;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Login Link Styling */
+.login-text {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-text a {
+  color: #241daf;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-text a:hover {
+  text-decoration: underline;
+}
+
+/* Hover effect on container to enhance the glass effect */
+.container:hover {
+  backdrop-filter: blur(12px);
+}
